@@ -1,0 +1,141 @@
+6t* 
+  padding 0px
+  margin 0px
+body 
+  background-color #f1ffe6
+.icon 
+  width 125px
+  height 120px
+  position relative
+  .frog 
+    position absolute
+    top 0
+    left 0
+    width 100%
+    height 100%
+    .body 
+      width 110px
+      height 86px
+      background-color #a3d768
+      border-radius 50%
+      position absolute
+      top 25px
+      left 0
+      right 0
+      margin auto
+      box-shadow 4px 4px 0px 0px rgba(163, 215, 104, 0.3)
+      .mouth 
+        margin auto
+      .big-mouth 
+        width 30px
+        height 20px
+        border-radius 0 0 50% 50%
+        box-shadow 2px 2px 0px 0px rgba(63, 106, 52, 0.3)
+      .blush 
+        width 75px
+        height 9px
+        position absolute
+        top 20px
+        left 0
+        right 0
+        margin auto
+        &:before 
+          position absolute
+          top 0
+          left 0
+        &:after 
+          position absolute
+          top 0
+          right 0
+    .eyes 
+      width 86px
+      height 35px
+      position absolute
+      top 8px
+      left 0
+      right 0
+      margin auto
+      .eye 
+        width 35px
+        height 35px
+        &:before 
+          content ""
+          display block
+          width 100%
+          height 100%
+          background-color #a3d768
+          border-radius 50%
+        .eye-inner 
+          background-color #fff
+          width 80%
+          height 80%
+          position absolute
+          top 10%
+          left 10%
+          border-radius 50%
+          .pupil 
+            background-color #3f6a34
+            width 60%
+            height 60%
+            position absolute
+            top 20%
+            left 20%
+            border-radius 50%
+            .light 
+              background-color #fff
+              width 50%
+              height 50%
+              position absolute
+              top 10%
+              left 10%
+              border-radius 50%
+      .eye-left 
+        position absolute
+        top 0px
+        left 0
+      .eye-right 
+        position absolute
+        top 0px
+        right 0
+.icon .frog .body .blush:before, .icon .frog .body .blush:after 
+  content ""
+  display block
+  width 12px
+  height 100%
+  background-color #f7d2c9
+  border-radius 50%
+.frog#frog-2 
+  .mouth 
+    background-color #fff
+    position absolute
+    top 30px
+    left 0
+    right 0
+  .eye-inner 
+    top 17%
+    background-color transparent !important
+    &:before 
+      position absolute
+      top 0
+      left 5px
+      transform rotate(-45deg)
+    &:after 
+      position absolute
+      top 0
+      right 5px
+      transform rotate(45deg)
+    .pupil 
+      display none
+@-webkit-keyframes 
+  hearts 
+    0% {
+    -webkit-transform scale(0.7)
+100% 
+}
+.frog#frog-2 .eye-inner:before, .frog#frog-2 .eye-inner:after 
+  content ""
+  display block
+  height 70%
+  width 40%
+  background-color #c71f1c
+  border-radius 50% 50% 0 0
